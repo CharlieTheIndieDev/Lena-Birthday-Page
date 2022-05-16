@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    
+	<!-- META -->
+	<title>Happy Birthday Lena !</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.png">
+     
+    <!-- Style -->
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="stylesheet" type="text/css" href="card.css">
+    <link rel="stylesheet" type="text/css" href="boombox.css">
+    
+	<style>#splash_title{ margin-top: 65px; }@media (max-width: 900px){ #splash_title{ font-size: 75px; margin-top: 105px; } }</style>
+
+</head>
+<body>
+
+	<!-- Splash Page! -->
+	<div id="splash" style='background:hsl(152, 97%, 13%);'>		
+            <div id="splash_title"><span style='position:relative;right:0px'>HAPPY<span> </span></span style='position:relative;left:0px'>BIRTHDAY !</span></div>
+		<div id="splash_arrow">
+			<div></div><div></div><div></div><div></div>
+		</div>
+		<!--<a href='/' id='splash_home'></a>-->
+	</div>
+	
+	
+	<!-- Words & Gallery! -->
+	<div id="words">
+		<div id="intro"><p>This is a little birthday page for the amazing Anna-Lena Woermer</p>
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+		</div>
+		
+			<div style="text-align:center;font-family:monospace;"></div>
+            <div class="card">
+                <div class="imgBox">
+                    <div class="bark"></div>
+                    <img src="MainPage.jpg">
+                </div>
+                <div class="details">
+                    <h4 class="color1">You're not a Fossil! (YET)</h2>
+                    <h4 class="color2 margin">(HAPPY BIRTHDAY)</h3>
+                    <p>Dear Lena,</p>
+                    <p>Let's see.. .</p>
+                    <p>Congratulations ! You made it to 20</p>
+                    <p>You're probably the most fantastic</p>
+                    <p>cookie making machine I know.</p>
+                    <p>I hope you know that you bring us</p>
+                    <p>so much joy</p>
+                    <p>Have a good one \o/</p>
+                    <p class="text-right">Happy Birthday again</p>
+                    <p class="text-right">♥ Charlie</p>
+                </div>
+            </div>
+		
+	</div>
+
+	<!-- FOOTER: Navigate to other parts of the site -->
+	<div id="footer_nav_container">
+        <div id="footer_nav">
+            <div>
+                <div id="boombox">
+                    
+                <div class="boombox-handle"></div>
+                
+                <div class="boombox-body">
+                
+                    <section class="master-controls">
+                        <input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
+                        <datalist id="gain-vals">
+                            <option value="0" label="min">
+                            <option value="2" label="max">
+                        </datalist>
+                        <label for="volume">VOL</label>
+            
+                        <input type="range" id="panner" class="control-panner" list="pan-vals" min="-1" max="1" value="0" step="0.01" data-action="panner" />
+                        <datalist id="pan-vals">
+                            <option value="-1" label="left">
+                            <option value="1" label="right">
+                        </datalist>
+                        <label for="panner">PAN</label>
+                        
+                        <button class="control-power" role="switch" aria-checked="false" data-power="on">
+                            <span>On/Off</span>
+                        </button>
+                    </section>
+            
+                    <section class="tape">
+            
+                        <audio src="HappyBirthday_DuckSong.mp3" crossorigin="anonymous" ></audio>
+                        
+            <!-- 			type="audio/mpeg" -->
+            
+                        <button data-playing="false" class="tape-controls-play" role="switch" aria-checked="false">
+                            <span>Play/Pause</span>
+                        </button>
+                    </section>
+                    
+                </div><!-- boombox-body -->
+            </div>
+            </div>
+        </div>
+        
+	</div>
+	<!-- Site credits -->
+	<div id="footer_credits_container">
+		<div id="footer_credits">
+			This page was made possible by
+			<br>
+			Charlie Joshi
+            <br>
+            Birthday song sourced from Wrinkle the Duck
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+<!-- Scripts! -->
+<script src="-js/q.js"></script>
+<script src="-js/pegasus.js"></script>
+<script src="-js/helpers.js"></script>
+<script src="-js/page.js"></script>
+<script src="-js/sharing.js"></script>
+<script src ="boombox.js"></script>
+<script src ="interactiveConfetti.js"></script>
+
+<script>
+    //   confetti.stop();
+
+    const startit = () => {
+      setTimeout(function () {
+        console.log("start");
+        confetti.start();
+      }, 1000);
+    };
+
+    const stopit = () => {
+      setTimeout(function () {
+        console.log("stop");
+        confetti.stop();
+      }, 6000);
+    };
+
+    startit();
+    stopit();
+  </script>
+</body>
